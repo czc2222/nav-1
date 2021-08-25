@@ -1,0 +1,179 @@
+*{box-sizing: border-box;
+  margin:0;
+  padding:0;}
+*::after,*::before{
+    box-sizing: border-box;
+}
+ol,ul{list-style: none;}
+a {
+    color:inherit;
+    text-decoration:none;
+}
+body{
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url("background.8c7d56aa.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+
+}
+
+.webHeader {
+    
+    margin:20px;
+    
+}
+.searchForm{
+    display: flex;
+    justify-content: space-between;
+    height:40px;
+    
+}
+@media (min-width: 500px) {
+    .searchForm{
+        max-width: 561px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+.searchForm >input{
+    width:100%;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding:0 10px;
+}
+.searchForm > button{
+    white-space:nowrap;
+    padding:0 25px;
+    border:none;
+    background:#78BEF0;
+    border-radius: 6px;
+    color:white;
+    font-size: 16px;
+
+}
+
+.webMain{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.webList{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:0 20px;
+
+
+    
+
+}
+@media (min-width: 500px) {
+    .webList{
+        margin-right: -37.5px;
+        margin-left:0;
+        justify-content: center;
+        margin-top:80px;
+
+    }
+}
+@media (min-width: 500px) {
+    .webList >li{
+        margin-right:37.5px;
+    }
+
+
+}
+.webList >li{
+    
+    margin-bottom: 20px;
+
+    
+}
+.webList .web{
+    border:1px solid #ddd;
+    border-radius: 6px;
+    background: white;
+    width:150px;
+    height:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
+
+    
+}
+.webList .web >.logo{
+    width:70px;
+    height:70px;
+    margin-top:10px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.webList .web .close{
+
+    position: absolute;
+    top:5px;
+    right:10px;
+    display: none;
+    cursor:default;
+
+}
+.webList .web:hover .close{
+    display: block;
+}
+
+.webList .web > .webLink{
+    
+    text-align: center;
+    width:130px;
+    font-size: 18px;
+    
+    white-space:normal;
+    word-break:break-all;
+    word-wrap:break-word; 
+}
+.webList .addButton{
+    background-color: white;
+    border:1px solid #ddd;
+    border-radius: 6px;
+    width:150px;
+    height:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.webList .addButton .icon{
+       width:70px;
+       height:70px;
+       display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.webList .addButton .text{
+    text-align: center;
+    width:130px;
+    font-size: 18px;
+    
+}
+.webList .web .logo >img{
+    
+    width:70px;
+    height:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15px;
+}
